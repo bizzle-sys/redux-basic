@@ -1,23 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const initialState = {
   formDt: "",
-  dtList: [],
+  listDt: [],
 };
-
 const nameSlice = createSlice({
-  name: "userName",
+  name: "naam",
   initialState: initialState,
   reducers: {
-    setFormDt: (state, action) => {
+    setformDt: (state, action) => {
       state.formDt = action.payload;
     },
-    setDtList: (state, action) => {
-      state.dtList = [...state.dtList, state.formDt];
+    setlistDt: (state, action) => {
+      state.listDt = [...state.listDt, state.formDt];
     },
   },
 });
-
 const { reducer, actions } = nameSlice;
-export const { setFormDt, setDtList } = actions;
+export const { setformDt, setlistDt } = actions;
 export default reducer;

@@ -2,11 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 export const Display = () => {
-  const { dtList } = useSelector((state) => state.nameList);
+  const { listDt } = useSelector((state) => state.nameList);
   return (
     <div>
       <ul>
-        {dtList.map((item) => (
+        {listDt.map((item) => (
           <li>{item}</li>
         ))}
       </ul>

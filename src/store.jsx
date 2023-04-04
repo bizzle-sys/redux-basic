@@ -1,7 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import nameReducer from "./nameSlice";
+import nameList from "./nameSlice";
+
 export default configureStore({
   reducer: {
-    nameList: nameReducer,
+    nameList: nameList,
   },
 });
